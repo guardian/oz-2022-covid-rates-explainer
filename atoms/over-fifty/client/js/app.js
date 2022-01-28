@@ -3,7 +3,7 @@ import ScrollyTeller from "shared/js/scrollyteller"
 
 function init() {
 
-	var width = document.querySelector("#data-viz1").getBoundingClientRect().width
+	var width = document.querySelector("#data-viz2").getBoundingClientRect().width
 	var height = window.innerHeight;
 	console.log("width",width,"height", height)
 	var mobile = false;
@@ -19,7 +19,7 @@ function init() {
 
 	var active = d3.select(null);
 	var scaleFactor = width / 860
-	var scope = d3.select("#data-viz1")
+	var scope = d3.select("#data-viz2")
 
 	var data = {
 			"over12":{
@@ -290,7 +290,7 @@ function init() {
 
 
 	const scrolly = new ScrollyTeller({
-	            parent: document.querySelector("#scrolly-1"),
+	            parent: document.querySelector("#scrolly-2"),
 	            triggerTop: 1/3,
 	            triggerTopMobile: 0.75,
 	            transparentUntilActive: true
@@ -596,7 +596,7 @@ function init() {
 
 	}
 
-	var category = 'over12'
+	var category = 'over50'
 
 	scrolly.addTrigger({num: 1, do: () => {
 			console.log(1)
